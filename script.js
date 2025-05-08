@@ -1,5 +1,8 @@
 function stringChop(str, size) {
   // your code here
+	if(str==null){
+		return []
+	}
 	let res=[];
   let maxLength = Math.floor(str.length/size)*size;
   let leftOverLength = str.length-maxLength;
